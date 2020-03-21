@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+</head>
+
+
+
+
+
+<body>
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#" onsubmit="return valid()">
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      
+      <span>or use your email for registration</span>
+ 
+     
+      <select id="year" style="  background-color: #eee;
+      border: none;
+      padding: 12px 15px;
+      margin: 8px 0;
+      width: 100%;">
+        <option style="font-weight: bold;" >SIGNUP AS A</option>
+        <option id="far" >CUSTOMER</option>
+        <option id="sup" >AGENT</option>
+        <option id="cus" >ADMIN</option>
+    </select>
+
+		
+			<input id = "name" type="text" placeholder="Name" />
+			<input type="tel" id="phone" name="phone" placeholder="M. No.123-4567-8901" pattern="[0-9]{10}" required>
+			
+			<input type="email" placeholder="Email" />
+			<input id="ip" type="password" placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+			<input id="nip" type="password" placeholder="Confirm Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+			
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1 class="heading">Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" />
+			<input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" type="password" placeholder="Password"  required  />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container" >
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1 class="heading">Welcome Back!</h1>
+				<p class= "para1">To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1 class="heading">Hello, Glad to see you!</h1>
+				<p class= "para1">Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp"  >Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/signup.js"></script>
+</body>
+</html>
